@@ -80,21 +80,6 @@
             <div class="hero-bg-overlay"></div>
         </div>
     </section>
-    <!-- Client Trust Bar -->
-<section class="trust-bar">
-    <div class="trust-container">
-        <p class="trust-label">Trusted by brands that needed results</p>
-        <div class="trust-logos">
-            <div class="trust-logo">
-                <img src="Acegaurad.png" alt="AceGuard Security">
-                <span>AceGuard Security</span>
-            </div>
-            <div class="trust-logo trust-placeholder">
-                <span>Your brand here</span>
-            </div>
-        </div>
-    </div>
-</section>
 
     <!-- What We Do - Overview -->
     <section class="overview">
