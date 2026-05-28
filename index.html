@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FPU — For Public Use | Creative Studio & Streetwear</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+<base target="_blank">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-logo">FPU</div>
+        <div class="nav-links">
+            <a href="#work">Work</a>
+            <a href="#studio">Studio</a>
+            <a href="#services">Services</a>
+            <a href="#story">About</a>
+        </div>
+        <div class="nav-right">
+            <div class="nav-cart">
+                <span class="cart-icon">Store</span>
+                <span class="cart-count">0</span>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-header">
+            <div class="nav-logo">FPU</div>
+            <button class="close-menu" id="closeMenu" aria-label="Close menu">×</button>
+        </div>
+        <div class="mobile-menu-links">
+            <a href="#work" class="mobile-link">Work</a>
+            <a href="#studio" class="mobile-link">Studio</a>
+            <a href="#services" class="mobile-link">Services</a>
+            <a href="#story" class="mobile-link">About</a>
+        </div>
+        <div class="mobile-menu-footer">
+            <div class="nav-cart mobile-cart">
+                <span class="cart-icon">Store</span>
+                <span class="cart-count">0</span>
+            </div>
+        </div>
+    </div>
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-tag">Creative Studio & Streetwear Label</div>
+            <div class="hero-logo">
+                <div class="logo-box logo-box-dark">
+                    <span class="logo-text">FPU</span>
+                    <span class="logo-reg">®</span>
+                </div>
+            </div>
+            <h1 class="hero-title hero-title-dark">FOR PUBLIC USE</h1>
+            <p class="hero-subtitle hero-subtitle-dark">We build brands, craft digital experiences, and design the clothes you wear while doing both.</p>
+            <div class="hero-cta">
+                <button class="btn-primary" onclick="scrollToSection('work')">View Our Work</button>
+                <button class="btn-secondary" onclick="scrollToSection('services')">Hire Us</button>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+        <div class="hero-bg">
+            <img src="images/logo.jpg" alt="FPU Floral Background" class="hero-bg-image">
+            <div class="hero-bg-overlay"></div>
+        </div>
+    </section>
+
+    <!-- What We Do - Overview -->
+    <section class="overview">
+        <div class="section-header">
+            <span class="section-number">01</span>
+            <h2>What We Do</h2>
+            <p>Three lanes. One vision. Built for public use.</p>
+        </div>
+        <div class="overview-grid">
+            <div class="overview-card" data-aos="fade-up">
+                <div class="overview-icon">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                        <path d="M2 17l10 5 10-5"/>
+                        <path d="M2 12l10 5 10-5"/>
+                    </svg>
+                </div>
+                <h3>Streetwear</h3>
+                <p>Seasonal drops designed in-house. From concept to cut, we control every stitch. Limited runs. No waste.</p>
+                <a href="#collection" class="link-arrow">Shop Drop 001 →</a>
+            </div>
+            <div class="overview-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="overview-icon">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <rect x="2" y="3" width="20" height="14" rx="2"/>
+                        <line x1="8" y1="21" x2="16" y2="21"/>
+                        <line x1="12" y1="17" x2="12" y2="21"/>
+                    </svg>
+                </div>
+                <h3>Web Development</h3>
+                <p>Custom sites, e-commerce platforms, and digital experiences. We build what we sell on—so we know it works.</p>
+                <a href="#services" class="link-arrow">See Capabilities →</a>
+            </div>
+            <div class="overview-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="overview-icon">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <circle cx="12" cy="12" r="10"/>
+                        <path d="M12 6v6l4 2"/>
+                    </svg>
+                </div>
+                <h3>Brand Services</h3>
+                <p>Company profiling, visual identity, and outsourced branding for businesses and individuals who need to stand out.</p>
+                <a href="#services" class="link-arrow">Start a Project →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work / Portfolio Section -->
+    <section id="work" class="work">
+        <div class="section-header">
+            <span class="section-number">02</span>
+            <h2>Selected Work</h2>
+            <p>Clothing, code, and everything between.</p>
+        </div>
+
+        <div class="work-tabs">
+            <button class="work-tab active" data-tab="all">All Work</button>
+            <button class="work-tab" data-tab="clothing">Clothing</button>
+            <button class="work-tab" data-tab="digital">Digital</button>
+            <button class="work-tab" data-tab="branding">Branding</button>
+        </div>
+
+        <div class="work-grid" id="workGrid">
+            <!-- Clothing: Beanie -->
+            <div class="work-item" data-category="clothing">
+                <div class="work-image">
+                    <img src="images/beanie.jpeg" alt="FPU Beanie">
+                    <div class="work-overlay">
+                        <span class="work-tag">Winter Drop 001</span>
+                        <h4>Cuffed Beanie</h4>
+                        <p>R400</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Clothing: Sweater -->
+            <div class="work-item" data-category="clothing">
+                <div class="work-image">
+                    <img src="images/sweater.jpeg" alt="FPU Sweater">
+                    <div class="work-overlay">
+                        <span class="work-tag">Winter Drop 001</span>
+                        <h4>Crewneck Sweater</h4>
+                        <p>R850</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Clothing: Trucker -->
+            <div class="work-item" data-category="clothing">
+                <div class="work-image">
+                    <img src="images/cap.jpeg" alt="FPU Trucker Cap">
+                    <div class="work-overlay">
+                        <span class="work-tag">Winter Drop 001</span>
+                        <h4>Trucker Cap</h4>
+                        <p>R450</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Digital: This Website -->
+            <div class="work-item" data-category="digital">
+                <div class="work-image work-digital">
+                    <div class="digital-preview">
+                        <div class="browser-mockup">
+                            <div class="browser-bar">
+                                <span></span><span></span><span></span>
+                            </div>
+                            <div class="browser-content">
+                                <img src="images/Acegaurad.png" alt="Ace website ">
+                                <div class="mockup-grid">
+                                    <div></div><div></div><div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work-overlay">
+                        <span class="work-tag">Web Development</span>
+                        <h4>AceGuard Security Website</h4>
+                        <p>Custom build — React, Node.js</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Branding: Logo System -->
+            <div class="work-item" data-category="branding">
+                <div class="work-image work-branding">
+                    <div class="branding-preview">
+                        <div class="logo-showcase">
+                            <div class="showcase-logo">FPU</div>
+                            <div class="showcase-text">For Public Use</div>
+                        </div>
+                    </div>
+                    <div class="work-overlay">
+                        <span class="work-tag">Brand Identity</span>
+                        <h4>FPU Visual System</h4>
+                        <p>Logo, color, typography</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Digital: Coming Soon -->
+            <div class="work-item" data-category="digital">
+                <div class="work-image work-digital">
+                    <div class="digital-preview coming-soon">
+                        <span>Client Project</span>
+                        <p>Coming Soon</p>
+                    </div>
+                    <div class="work-overlay">
+                        <span class="work-tag">Web Development</span>
+                        <h4>Client E-Commerce Site</h4>
+                        <p>In Development</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Design Studio / Store Section -->
+    <section id="studio" class="studio">
+        <div class="section-header">
+            <span class="section-number">03</span>
+            <h2>Drop 001 Studio</h2>
+            <p>Configure your piece. Support the build.</p>
+        </div>
+
+        <div class="studio-container">
+            <div class="studio-preview">
+                <div class="preview-stage">
+                    <div class="preview-cap" id="previewCap">
+                        <div class="cap-silhouette">
+                            <span class="preview-placeholder">[Product Preview]</span>
+                        </div>
+                        <div class="logo-placement" id="logoPlacement">
+                            <span class="mini-logo">FPU</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="preview-info">
+                    <h3 id="previewName">Cuffed Beanie</h3>
+                    <p id="previewDesc">Embroidered fold. Premium knit.</p>
+                    <span class="preview-price" id="previewPrice">R400</span>
+                </div>
+            </div>
+
+            <div class="studio-controls">
+                <div class="control-group">
+                    <label>Product</label>
+                    <div class="option-buttons">
+                        <button class="option-btn active" data-product="beanie">Beanie</button>
+                        <button class="option-btn" data-product="trucker">Trucker</button>
+                        <button class="option-btn" data-product="sweater">Sweater</button>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label>Colorway</label>
+                    <div class="color-options" id="colorOptions">
+                        <button class="color-btn active" style="background: #C9A227;" data-color="mustard" data-name="Mustard Gold"></button>
+                        <button class="color-btn" style="background: #1B4332;" data-color="forest" data-name="Forest Green"></button>
+                        <button class="color-btn" style="background: #0a0a0a;" data-color="black" data-name="Stealth Black"></button>
+                    </div>
+                    <span class="color-name" id="colorName">Mustard Gold</span>
+                </div>
+
+                <div class="control-group">
+                    <label>Logo Placement</label>
+                    <div class="option-buttons">
+                        <button class="option-btn active" data-placement="front">Front Center</button>
+                        <button class="option-btn" data-placement="side">Side Hit</button>
+                        <button class="option-btn" data-placement="back">Rear Arch</button>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label>Size</label>
+                    <div class="size-options">
+                        <button class="size-btn">OSFA</button>
+                        <span class="size-note">One Size Fits All — Adjustable</span>
+                    </div>
+                </div>
+
+                <button class="btn-primary btn-full" id="addToBag">Add to Bag — R400</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pre-order Progress -->
+    <section class="progress-section">
+        <div class="progress-container">
+            <div class="progress-header">
+                <h3>Drop 001 Progress</h3>
+                <p>Pre-orders fund production. No waste. No excess.</p>
+            </div>
+            <div class="progress-bar-container">
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill" style="width: 34%;"></div>
+                </div>
+                <div class="progress-stats">
+                    <span><strong id="currentOrders">34</strong> orders placed</span>
+                    <span>Goal: <strong>100</strong> to produce</span>
+                </div>
+            </div>
+            <div class="progress-incentive">
+                <p>At 100 orders, production begins. At 150, all backers get free shipping.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="section-header">
+            <span class="section-number">04</span>
+            <h2>Services</h2>
+            <p>Hire FPU for your next project.</p>
+        </div>
+
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-header">
+                    <h3>Web Development</h3>
+                    <span class="service-price">From R8,500</span>
+                </div>
+                <ul class="service-list">
+                    <li>Custom website design & development</li>
+                    <li>E-commerce platforms (Shopify, WooCommerce, custom)</li>
+                    <li>Landing pages & campaign sites</li>
+                    <li>Website maintenance & updates</li>
+                </ul>
+                <button class="btn-secondary btn-full" onclick="openServiceForm('web')">Request Quote</button>
+            </div>
+
+            <div class="service-card featured">
+                <div class="service-badge">Most Popular</div>
+                <div class="service-header">
+                    <h3>Brand Identity</h3>
+                    <span class="service-price">From R5,000</span>
+                </div>
+                <ul class="service-list">
+                    <li>Logo design & visual identity</li>
+                    <li>Brand guidelines & style guides</li>
+                    <li>Company profiling & pitch decks</li>
+                    <li>Social media asset packs</li>
+                </ul>
+                <button class="btn-primary btn-full" onclick="openServiceForm('branding')">Request Quote</button>
+            </div>
+
+            <div class="service-card">
+                <div class="service-header">
+                    <h3>Full Package</h3>
+                    <span class="service-price">From R15,000</span>
+                </div>
+                <ul class="service-list">
+                    <li>Complete brand identity system</li>
+                    <li>Custom website (5+ pages)</li>
+                    <li>E-commerce integration</li>
+                    <li>3 months post-launch support</li>
+                </ul>
+                <button class="btn-secondary btn-full" onclick="openServiceForm('full')">Request Quote</button>
+            </div>
+        </div>
+
+        <div class="services-note">
+            <p>Every project starts with a conversation. Tell us what you need, we'll tell you how we build it.</p>
+            <a href="mailto:hello@forpublicuse.co.za" class="link-arrow">hello@forpublicuse.co.za →</a>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process">
+        <div class="section-header">
+            <span class="section-number">05</span>
+            <h2>How We Work</h2>
+            <p>From brief to build. Transparent at every step.</p>
+        </div>
+        <div class="process-steps">
+            <div class="process-step">
+                <div class="step-number">01</div>
+                <h4>Discovery</h4>
+                <p>We listen. You explain the problem. We map the solution.</p>
+            </div>
+            <div class="process-arrow">→</div>
+            <div class="process-step">
+                <div class="step-number">02</div>
+                <h4>Design</h4>
+                <p>Wireframes, mockups, and prototypes. You approve before we build.</p>
+            </div>
+            <div class="process-arrow">→</div>
+            <div class="process-step">
+                <div class="step-number">03</div>
+                <h4>Develop</h4>
+                <p>Clean code, responsive design, and performance-first builds.</p>
+            </div>
+            <div class="process-arrow">→</div>
+            <div class="process-step">
+                <div class="step-number">04</div>
+                <h4>Deliver</h4>
+                <p>Launch, handover, and support. We stay until you're confident.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Story / About Section -->
+    <section id="story" class="story">
+        <div class="section-header">
+            <span class="section-number">06</span>
+            <h2>About FPU</h2>
+        </div>
+        <div class="story-content">
+            <div class="story-text">
+                <p class="story-lead">Started with zero capital. Built on pre-orders. Designed for public use.</p>
+                <p>FPU is a creative studio that happens to make clothes. Or maybe it's a clothing label that happens to build websites. Either way, we believe good design should be accessible—to wear, to use, and to hire.</p>
+                <p>We launched Drop 001 to prove we could fund our own production through community support. Every pre-order goes straight into manufacturing. No waste. No excess inventory.</p>
+                <p>That same community-first approach drives our client work. We build brands and digital experiences for people who need them—startups, small businesses, and creators who can't afford agency prices but deserve agency quality.</p>
+                <div class="story-stats">
+                    <div class="stat">
+                        <span class="stat-number">3</span>
+                        <span class="stat-label">Services</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">001</span>
+                        <span class="stat-label">First Drop</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">0</span>
+                        <span class="stat-label">Investors</span>
+                    </div>
+                </div>
+            </div>
+            <div class="story-image">
+                <div class="placeholder-story">
+                    <img src="images/profile.jpg" alt="Profile Image" class="story-profile-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <div class="footer-logo">FPU®</div>
+                <p>For Public Use<br>Creative Studio & Streetwear</p>
+            </div>
+            <div class="footer-links">
+                <h4>Work</h4>
+                <a href="#work">Clothing</a>
+                <a href="#work">Digital</a>
+                <a href="#work">Branding</a>
+            </div>
+            <div class="footer-links">
+                <h4>Services</h4>
+                <a href="#services">Web Development</a>
+                <a href="#services">Brand Identity</a>
+                <a href="#services">Full Package</a>
+            </div>
+            <div class="footer-links">
+                <h4>Connect</h4>
+                <a href="#">Instagram</a>
+                <a href="#">TikTok</a>
+                <a href="mailto:hello@forpublicuse.co.za">Email</a>
+            </div>
+            <div class="footer-newsletter">
+                <h4>Early Access</h4>
+                <p>Get drop alerts and studio updates.</p>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="your@email.com">
+                    <button>Join</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 FPU — For Public Use. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Shopping Bag Modal -->
+    <div class="modal" id="bagModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Your Bag</h3>
+                <button class="close-modal" onclick="closeModal()">×</button>
+            </div>
+            <div class="modal-body" id="bagItems">
+                <p class="empty-bag">Your bag is empty.</p>
+            </div>
+            <div class="modal-footer">
+                <div class="bag-total">
+                    <span>Total</span>
+                    <span id="bagTotal">R0</span>
+                </div>
+                <button class="btn-primary btn-full">Proceed to Pre-order</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Service Quote Modal -->
+    <div class="modal" id="serviceModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Request a Quote</h3>
+                <button class="close-modal" onclick="closeServiceModal()">×</button>
+            </div>
+            <div class="modal-body">
+                <form id="quoteForm" class="quote-form">
+                    <div class="form-group">
+                        <label>Name</label>
+                        <input type="text" placeholder="Your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" placeholder="your@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Service</label>
+                        <select id="serviceSelect">
+                            <option value="web">Web Development</option>
+                            <option value="branding">Brand Identity</option>
+                            <option value="full">Full Package</option>
+                            <option value="other">Something Else</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Budget Range</label>
+                        <select>
+                            <option>R5,000 – R10,000</option>
+                            <option>R10,000 – R20,000</option>
+                            <option>R20,000 – R50,000</option>
+                            <option>R50,000+</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Project Details</label>
+                        <textarea rows="4" placeholder="Tell us about your project..."></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary btn-full">Send Request</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "branding": [
+    "gallery/branding/1.jpg",
+    "gallery/branding/2.jpg",
+    "gallery/branding/3.jpg"
+  ],
+  "web": [
+    "gallery/web/1.jpg",
+    "gallery/web/2.jpg"
+  ],
+  "posters": [
+    "gallery/posters/1.jpg",
+    "gallery/posters/2.jpg"
+  ]
+}
